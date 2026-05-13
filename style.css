@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    line-height: 1.8;
+}
+
+/* 导航栏样式 */
+.navbar {
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #409eff;
+}
+
+/* 首页区域 */
+.home-box {
+    height: 100vh;
+    background: linear-gradient(135deg, #409eff, #67c23a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.my-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.my-avatar:hover {
+    transform: scale(1.08);
+}
+
+.btn-start {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #409eff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-start:hover {
+    background: #222;
+    color: white;
+}
+
+/* 通用区块样式 */
+.about-box, .photo-box, .contact-box {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* 相册滑动交互 */
+.photo-slide {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.slide-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+}
+
+.slide-btn button {
+    padding: 8px 20px;
+    margin: 0 10px;
+    border: none;
+    background: #409eff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 底部 */
+.footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
